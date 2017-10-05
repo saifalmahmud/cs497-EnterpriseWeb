@@ -1,0 +1,12 @@
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/bin/Debug/netcoreapp2.0/libe_sqlite3.dylib
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/bin/Debug/netcoreapp2.0/FirstWebApp.deps.json
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/bin/Debug/netcoreapp2.0/FirstWebApp.runtimeconfig.json
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/bin/Debug/netcoreapp2.0/FirstWebApp.runtimeconfig.dev.json
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/bin/Debug/netcoreapp2.0/FirstWebApp.dll
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/bin/Debug/netcoreapp2.0/FirstWebApp.pdb
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/obj/Debug/netcoreapp2.0/FirstWebApp.csprojResolveAssemblyReference.cache
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/obj/Debug/netcoreapp2.0/FirstWebApp.csproj.CoreCompileInputs.cache
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/obj/Debug/netcoreapp2.0/FirstWebApp.AssemblyInfoInputs.cache
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/obj/Debug/netcoreapp2.0/FirstWebApp.AssemblyInfo.cs
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/obj/Debug/netcoreapp2.0/FirstWebApp.dll
+/Users/saifalmahmud/Desktop/CS 497/CS497EnterpriseWeb/cs497-EnterpriseWeb/FinalProjectPart1/FirstWebApp/FirstWebApp/obj/Debug/netcoreapp2.0/FirstWebApp.pdb
