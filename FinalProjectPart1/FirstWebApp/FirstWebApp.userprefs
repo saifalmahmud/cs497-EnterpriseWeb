@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{9D7B147B-F084-413A-AED4-49BA8686EE55}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FirstWebApp/Views/Home/Contact.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FirstWebApp/Views/Home/About.cshtml">
     <Files>
       <File FileName="FirstWebApp/Controllers/HomeController.cs" Line="1" Column="1" />
       <File FileName="FirstWebApp/Models/ErrorViewModel.cs" Line="1" Column="1" />
       <File FileName="FirstWebApp/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="FirstWebApp/Views/Home/About.cshtml" Line="2" Column="20" />
+      <File FileName="FirstWebApp/Views/Home/About.cshtml" Line="7" Column="111" />
       <File FileName="FirstWebApp/Views/Home/Index.cshtml" Line="6" Column="29" />
-      <File FileName="FirstWebApp/Views/Home/Contact.cshtml" Line="8" Column="7" />
+      <File FileName="FirstWebApp/Views/Home/Contact.cshtml" Line="16" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
