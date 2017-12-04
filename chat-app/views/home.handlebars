@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+</head>
+<body>
+    <h1>Hello</h1>
+    <textarea id="message-area">
+
+    </textarea><br/>
+    <span id="whats-going-on"></span>
+
+    <input type="text" id="user"/><br/><br/>
+    <input type="text" id="message"/><br/><br/>
+    <button type="button" id="send">Send</button><br/>
+
+    <div id="user-area">
+
+    </div>
+
+    <script type="text/javascript">
+        const socket = io('http://localhost:3000');
+
+        $('#send').on('click', function() {
+            var username = $('#user').val();
+            var usermessage = $('#message').val();
+            socket.emit('chat', {name: username, message: usermessage}); 
+        });
+
+        socket.on('sendchat', function(data) {
+            $('#message-area').html(data.name + ' sent: ' + data.message);
+        });
+
+
+        $('#message').on('keypress', function() {
+            console.log('Typing..');
+            var username = $('#user').val();
+            socket.emit('typing', {name: username, message: " is typing"}); 
+        });
+
+        socket.on('typing', function(data) {
+            $('#whats-going-on').html(data.name + data.message);
+        });        
+
+        $('#message').on('keyup', function() {
+            $('#whats-going-on').html('');
+        }); 
+
+
+    </script>
+</body>
+</html>
