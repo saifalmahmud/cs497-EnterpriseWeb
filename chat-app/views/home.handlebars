@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <textarea id="message-area">
 
-    </textarea><br/>
-    <span id="whats-going-on"></span>
+	<div class="container">
 
-    <input type="text" id="user"/><br/><br/>
-    <input type="text" id="message"/><br/><br/>
-    <button type="button" id="send">Send</button><br/>
-
-    <div id="user-area">
-
-    </div>
-
-    <script type="text/javascript">
-        const socket = io('http://localhost:3000');
-
-        $('#send').on('click', function() {
-            var username = $('#user').val();
-            var usermessage = $('#message').val();
-            socket.emit('chat', {name: username, message: usermessage}); 
-        });
-
-        socket.on('sendchat', function(data) {
-            $('#message-area').html(data.name + ' sent: ' + data.message);
-        });
+		<div class="jumbotron">
+			<h1 margin-left =15px>  ABS-BSU Chat</h1>     
+			
+		</div>
 
 
-        $('#message').on('keypress', function() {
-            console.log('Typing..');
-            var username = $('#user').val();
-            socket.emit('typing', {name: username, message: " is typing"}); 
-        });
 
-        socket.on('typing', function(data) {
-            $('#whats-going-on').html(data.name + data.message);
-        });        
+		<div class="form-group">
+			<label for="comment"></label>
+			<textarea class="form-control" rows="5" id="message-area"></textarea>
+		</div>
+		<span id="whats-going-on"></span>
+		<br/>
+		<br/>
 
-        $('#message').on('keyup', function() {
-            $('#whats-going-on').html('');
-        }); 
+		<p>   User: </p> 
+		<input type="text" id="user"/><br/><br/>
+		<p>   Message: </p>
+		<input type="text" id="message"/><br/><br/>
+
+		<button type="button" id="send" class="btn btn-primary">Send</button><br/>
+
+	</div>
 
 
+	<div id="user-area">
+
+	</div>
+
+	<script type="text/javascript">
+		const socket = io('http://localhost:3000');
+
+		$('#send').on('click', function() {
+			var username = $('#user').val();
+			var usermessage = $('#message').val();
+			socket.emit('chat', {name: username, message: usermessage}); 
+		});
+
+		socket.on('sendchat', function(data) {
+			$('#message-area').html(data.name + ': ' + data.message);
+		});
+
+
+		$('#message').on('keypress', function() {
+			console.log('Typing..');
+			var username = $('#user').val();
+			socket.emit('typing', {name: username, message: " is typing"}); 
+		});
+
+		socket.on('typing', function(data) {
+			$('#whats-going-on').html(data.name + data.message);
+		});        
+
+		$('#message').on('keyup', function() {
+			$('#whats-going-on').html('');
+		}); 
+
+        // $.ajax();
     </script>
 </body>
 </html>
